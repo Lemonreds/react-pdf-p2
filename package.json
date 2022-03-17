@@ -1,0 +1,36 @@
+{
+  "name": "react-pdf-p2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "core-js": "^2.6.10",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "less": "^4.1.1",
+    "less-loader": "^9.1.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "shelljs": "^0.8.5"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "prop-types": "^15.7.2",
+    "pdfjs-dist": "1.6.210",
+    "react-window": "^1.8.6"
+  }
+}
