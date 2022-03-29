@@ -1,10 +1,16 @@
 import React, { PureComponent } from 'react';
 import * as PDFJS from 'pdfjs-dist';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
+
 
 import DocumentContext from './DocumentContext';
 import Message from './Message';
 import './Document.less';
 import { makeCancellablePromise } from './util';
+
+// worker.js regisger
+// window.PDFJS.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+window.PDFJS.workerSrc = pdfjsWorker;
 
 // 允许 PDF.js 范围请求
 window.PDFJS.disableRange = false;
